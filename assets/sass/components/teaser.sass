@@ -1,0 +1,434 @@
+.teaser-one
+  margin: 16px 0 16px
+  &__figure
+    margin: 0
+    position: relative
+    overflow: hidden
+    @include media('md')
+      &__figure
+        overflow: unset
+  &__content
+    position: absolute
+    bottom: 49px
+    left: 7.6%
+    @include media('lg')
+      position: relative
+      bottom: unset
+      left: unset
+  &__title
+    font-family: var(--font-os-condensed)
+    font-size: 48px
+    font-weight: 700
+    line-height: 48px
+    letter-spacing: -0.01em
+    text-align: left
+    color: var(--fontLightColor)
+    margin: 0 14px 7px 0
+    background: var(--fontAccentColor)
+    z-index: 1
+    position: relative
+    width: fit-content
+    padding: 2px 20px 5px 10px
+    @include media('lg')
+      font-size: calc(1.2rem + 2.4vw)
+      background: unset
+      color: var(--fontAccentColor)
+      //line-height: normal
+      margin: 0 auto
+      padding: 0
+    @include media('md')
+      font-size: calc(1.075rem + 2vw)
+  &__img
+    transform: scale3d(1,1,1)
+    transition: transform 0.7s ease-in-out
+    @include media('sm')
+      flex-shrink: 0
+      width: 100svw
+      left: -0.5rem
+      position: relative
+  &__link:hover
+    .teaser-one__img
+      transform: scale(1.1)
+      @include media('md')
+        transform: scale3d(1,1,1)
+
+
+
+.teaser-combi
+  gap: 1rem
+  margin: 5px 0 1rem 0
+  display: flex
+  justify-content: space-between
+  flex-shrink: 0
+  @include media('lg')
+    flex-wrap: wrap
+  &__figure
+    margin: 0
+    overflow: hidden
+    @include media('lg')
+      width: 50%
+    @include media('md')
+      width: 100%
+      overflow: unset
+  &__grad
+    position: absolute
+    bottom: 0
+  &__item 
+    position: relative
+    @include media('lg')
+      width: 100%
+      display: flex
+    @include media('md')
+      flex-direction: column
+  &__content
+    margin: 0 30% 6% 4.9%
+    position: absolute
+    bottom: 0
+    @include media('lg')
+      width: 60%
+      position: relative
+      bottom: unset
+      margin: 0 1rem
+    @include media('md')
+      width: 100%
+      margin: 0
+  &__grad
+    @include media('lg')
+      display: none
+  &__sub-title
+    font-family: var(--font-os-condensed)
+    font-size: 18px
+    font-weight: 600
+    line-height: normal
+    text-align: left
+    color: white
+    background: var(--fontAccentColor)
+    width: fit-content
+    padding: 1px 7px 3px
+    @include media('lg')
+      background: none
+      color: var(--fontAccentColor)
+      font-weight: 700
+      width: 100%
+      margin-top: 5px
+      text-align: left
+      margin-left: 0
+      margin-right: 0
+    @include media('md')
+      text-align: center
+      margin-left: auto
+      margin-right: auto
+  &__title
+    font-family: var(--font-os-condensed)
+    font-size: 24px
+    font-weight: 700
+    line-height: 26px
+    text-align: left
+    color: white
+    width: fit-content
+    margin-top: 4px
+    @include media('lg')
+      text-align: left
+      color: var(--fontGrayColor)
+      text-align: left
+      font-weight: 600
+      margin: 0
+      width: 100%
+      font-size: 22px
+    @include media('md')
+      text-align: center
+      margin-left: auto
+      margin-right: auto
+  &__img
+    transform: scale3d(1,1,1)
+    transition: transform 0.7s ease-in-out
+    @include media('sm')
+      flex-shrink: 0
+      width: 100svw
+      left: -0.5rem
+      position: relative
+  &__item:hover
+    .teaser-combi__img
+      transform: scale(1.1)
+      @include media('md')
+        transform: scale3d(1,1,1)
+
+.teaser-two, .teaser, .teaser-half
+  gap: 31px 1rem
+  margin: 11px 0 1rem 0
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  &__figure
+    margin: 0
+    overflow: hidden
+    position: relative
+    @include media('lg')
+      width: 50%
+    @include media('md')
+      width: 100%
+      overflow: unset
+  &__grad
+    position: absolute
+    bottom: 0
+  &__item 
+    width: calc(50% - 9px)
+    position: relative
+    @include media('lg')
+      width: 100%
+      display: flex
+    @include media('md')
+      flex-direction: column
+  &__content
+    @include media('lg')
+      width: 60%
+      position: relative
+      bottom: unset
+      margin: 0 1rem
+    @include media('md')
+      width: 100%
+      margin: 0
+  &__sub-title
+    font-family: var(--font-os-condensed)
+    font-size: 16px
+    font-weight: 700
+    line-height: normal
+    text-align: center
+    color: var(--fontAccentColor)
+    width: fit-content
+    margin: 4px auto 0 auto
+    @include media('lg')
+      text-align: left
+      margin-left: 0
+      margin-right: 0
+    @include media('md')
+      text-align: center
+      margin-left: auto
+      margin-right: auto
+  &__title
+    font-family: var(--font-os-condensed)
+    font-size: 22px
+    font-weight: 600
+    line-height: 26px
+    text-align: center
+    color: var(--fontGrayColor)
+    width: fit-content
+    margin: -2px auto 0 auto
+    width: fit-content
+    @include media('lg')
+      text-align: left
+      margin-left: 0
+      margin-right: 0
+    @include media('md')
+      text-align: center
+      margin-left: auto
+      margin-right: auto
+  &__img
+    transform: scale3d(1,1,1)
+    transition: transform 0.7s ease-in-out
+    @include media('sm')
+      width: 100svw
+      left: -0.5rem
+      position: relative
+  &__item:hover
+    .teaser-two__img
+      transform: scale(1.1)
+      @include media('md')
+        transform: scale3d(1,1,1)
+
+.teaser-half
+  margin-bottom: 22.5px
+  &__item
+    width: 100%
+    display: flex
+  &__figure
+    width: 48.7%
+    flex-shrink: 0
+    @include media('md')
+      width: 100%
+  &__content
+    width: 100%
+    padding-left: 15px
+    @include media('md')
+      padding-left: 0
+    *
+      text-align: left
+      margin-left: 0
+      @include media('md')
+        text-align: center
+        margin-left: auto
+
+.teaser-three
+  gap: 1.5rem 1rem
+  margin: 5px 0 1rem 0
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  &__figure
+    margin: 0
+    overflow: hidden
+    @include media('lg')
+      width: 50%
+    @include media('md')
+      width: 100%
+      overflow: unset
+  &__grad
+    position: absolute
+    bottom: 0
+  &__item 
+    width: calc(100% / 3 - 11px)
+    position: relative
+    @include media('lg')
+      width: 100%
+      display: flex
+    @include media('md')
+      flex-direction: column
+  &__content
+    @include media('lg')
+      width: 60%
+      position: relative
+      bottom: unset
+      margin: 0 1rem
+    @include media('md')
+      width: 100%
+      margin: 0
+  &__sub-title
+    font-family: var(--font-os-condensed)
+    font-size: 16px
+    font-weight: 700
+    line-height: normal
+    text-align: left
+    color: var(--fontAccentColor)
+    width: fit-content
+    margin: 4px auto 0 auto
+    @include media('lg')
+      text-align: left
+      margin-left: 0
+      margin-right: 0
+    @include media('md')
+      text-align: center
+      margin-left: auto
+      margin-right: auto
+  &__title
+    font-family: var(--font-os-condensed)
+    font-size: 22px
+    font-weight: 600
+    line-height: 26px
+    text-align: left
+    color: var(--fontGrayColor)
+    width: fit-content
+    margin: 0 auto 0 auto
+    width: fit-content
+    @include media('lg')
+      text-align: left
+      margin-left: 0
+      margin-right: 0
+    @include media('md')
+      text-align: center
+      margin-left: auto
+      margin-right: auto
+  &__img
+    transform: scale3d(1,1,1)
+    transition: transform 0.7s ease-in-out
+    @include media('sm')
+      width: 100svw
+      left: -0.5rem
+      position: relative
+  &__item:hover
+    .teaser-three__img
+      transform: scale(1.1)
+      @include media('md')
+        transform: scale3d(1,1,1)
+
+.teaser-three-wrap
+  .teaser-three__item
+    @include media('lg')
+      width: calc(50% - 9px)
+      flex-direction: column
+    @include media('md')
+      width: 100%
+  .teaser-three__figure, .teaser-three__content
+    @include media('lg')
+      width: 100%
+      margin: 0
+  .teaser-three__title, .teaser-three__sub-title
+    width: 100%
+    text-align: center
+
+.teaser-row
+  display: flex
+  flex-direction: column
+  row-gap: 15px
+  &__item
+    display: flex
+    @include media('lg')
+      width: 100%
+    @include media('md')
+      flex-direction: column
+  &__figure
+    margin: 0
+    width: fit-content
+    flex-shrink: 0
+    overflow: hidden
+    @include media('lg')
+      width: 30%
+    @include media('md')
+      width: 100%
+      overflow: unset
+  &__content
+    margin: 0 6% 0 11px
+    @include media('lg')
+      width: 60%
+      position: relative
+      bottom: unset
+      margin: 0 1rem
+    @include media('md')
+      width: 100%
+      margin: 0
+  &__sub-title
+    font-family: var(--font-os-condensed)
+    color: var(--fontAccentColor)
+    font-size: 16px
+    font-weight: 700
+    line-height: 18px
+    letter-spacing: -1%
+    text-align: left
+    @include media('lg')
+      margin-top: 6%
+    @include media('md')
+      margin-top: 5px
+      font-size: 18px
+      font-weight: 700
+      line-height: normal
+      text-align: center
+  &__title
+    font-family: var(--font-os-condensed)
+    color: var(--fontGrayColor)
+    font-size: 22px
+    font-weight: 600
+    line-height: 24px
+    letter-spacing: -1%
+    text-align: left
+    @include media('md')
+      text-align: center
+  &__img
+    transform: scale3d(1,1,1)
+    transition: transform 0.7s ease-in-out
+    @include media('sm')
+      width: 100svw
+      left: -0.5rem
+      position: relative
+  &__item:hover
+    .teaser-row__img
+      transform: scale(1.1)
+      @include media('md')
+        transform: scale3d(1,1,1)
+
+.teaser-mixed
+  display: flex
+  justify-content: space-between
+  gap: 1rem
+  margin: 19px 0 0 0
+  @include media('lg')
+    flex-direction: column
+

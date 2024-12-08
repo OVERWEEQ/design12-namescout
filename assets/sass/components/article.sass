@@ -1,0 +1,55 @@
+.article
+  &__links
+    margin: 10px 5px -17px 2px
+    display: flex
+    justify-content: space-between
+    .breadcrumbs
+      margin: 0
+    .follows
+      margin: 2px 0px 0px 0px
+  &__item
+    &__headline
+      display: flex
+      align-items: center
+      margin: 36px 0 5px 0
+      font-family: var(--font-os-condensed)
+      font-size: 32px
+      font-weight: 600
+      line-height: 44px
+      letter-spacing: -2%
+      text-align: left
+      color: var(--fontAccentColor)
+      display: flex
+      align-items: center
+      @include media('md')
+        font-size: calc(2.8vw + 16px)
+    &__text
+      font-family: var(--font-os-condensed)
+      color: var(--fontGrayColor)
+      font-size: 22px
+      font-weight: 400
+      line-height: 32px
+      letter-spacing: -2%
+      text-align: left
+      margin-bottom: 54px
+      a
+        text-decoration: underline !important
+        color: var(--fontGrayColor)
+    &__list
+      list-style: disc
+      list-style-type: disc
+      &__item
+        font-family: var(--font-os-condensed)
+        color: var(--fontGrayColor)
+        font-size: 22px
+        font-weight: 400
+        line-height: 32px
+        letter-spacing: -2%
+        text-align: left
+      &__item::before
+        content: '•'
+        color: black
+        font-size: 22px
+        margin-right: 10px
+        font-family: var(--font-os-condensed)
+        color: var(--fontGrayColor)

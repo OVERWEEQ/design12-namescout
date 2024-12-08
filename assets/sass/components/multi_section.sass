@@ -1,0 +1,42 @@
+.multi_section
+  display: flex
+  width: 100%
+  justify-content: space-between
+  @include media('lg')
+    flex-direction: column
+    margin-top: 1rem !important
+  &__container
+    width: 660px
+    @include media('lg')
+      width: 100%
+  &__add
+    margin-left: 33px
+    width: 300px
+    &__header
+      font-family: var(--font-os-condensed)
+      font-size: 18px
+      font-weight: 600
+      line-height: 32px
+      letter-spacing: -2%
+      text-align: left
+      color: var(--fontGrayColor)
+      margin: 28px 0 6px
+    @include media('lg')
+      width: 100%
+      margin-left: 0
+      > *
+        display: block
+        margin-left: auto
+        margin-right: auto
+    &__banner
+      float: right
+      margin: 24px 0 0 0
+      width: 300px
+      @include media('lg')
+        float: unset
+        margin: 25px auto
+      figure, h5
+        @include media('lg')
+          width: 50%
+      a
+        width: 300px

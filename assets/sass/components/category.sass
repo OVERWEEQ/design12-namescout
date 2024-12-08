@@ -1,0 +1,127 @@
+.category
+  &__title
+    font-family: var(--font-os-condensed)
+    font-size: 44px
+    font-weight: 800
+    line-height: 50px
+    letter-spacing: -4%
+    text-align: center
+    color: var(--fontAccentColor)  
+    margin: 10px 0 0 0
+    letter-spacing: -4%
+    @include media('md')
+      font-size: calc(3vw + 19px)
+      line-height: calc(3vw + 25px)
+  &__figure
+    margin: 33px 0 0 0
+    img
+      @include media('sm')
+        width: 100svw
+        left: -0.5rem
+        position: relative
+  &__desc
+    margin: 19px 0 1rem 1px
+    font-family: Open Sans
+    font-stretch: normal
+    font-size: 16px
+    font-weight: 400
+    line-height: 24px
+    text-align: left
+  &__img
+    @include media('sm')
+      width: 100svw
+      left: -0.5rem
+      position: relative
+  &__headline
+    display: flex
+    align-items: center
+    margin: 30px 0 5px 2px
+    h2
+      font-family: var(--font-os-condensed)
+      font-size: 32px
+      font-weight: 600
+      line-height: 36px
+      letter-spacing: -4%
+      text-align: left
+      color: var(--fontAccentColor)
+      text-wrap: nowrap
+      @include media('md')
+        font-size: calc(2.8vw + 18px)
+    &--arrow
+      position: relative
+      &::after
+        content: ""
+        display: inline-block
+        height: 17px
+        width: 34px
+        background-image: url('data:image/svg+xml,%3Csvg%20width%3D%2211%22%20height%3D%2217%22%20viewBox%3D%220%200%2011%2017%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M9.74365%209.18976L3.10303%2016.2192C2.64404%2016.705%201.90186%2016.705%201.44775%2016.2192L0.344238%2015.0511C-0.114746%2014.5652%20-0.114746%2013.7796%200.344238%2013.2989L5.05127%208.31625L0.344238%203.33362C-0.114746%202.84776%20-0.114746%202.06212%200.344238%201.58143L1.44287%200.402968C1.90186%20-0.0828902%202.64404%20-0.0828902%203.09814%200.402968L9.73877%207.4324C10.2026%207.91826%2010.2026%208.7039%209.74365%209.18976Z%22%20fill%3D%22%238E56C7%22%2F%3E%3C%2Fsvg%3E')
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center
+        margin-bottom: 1px
+    
+    svg
+      width: fit-content
+      position: relative
+      top: 4px
+      left: 11px
+  &__text, &__text-bold
+    font-family: var(--font-os-condensed)
+    font-size: 22px
+    font-weight: 400
+    line-height: 32px
+    letter-spacing: -2%
+    text-align: left
+    color: var(--fontGrayColor)
+    margin: 13px 0 0 2px
+    span
+      text-decoration: underline
+    a
+      color: var(--fontGrayColor)
+  &__text-bold
+    font-weight: 600
+    margin: 6px 0px 21px
+  > .category__text:nth-child(4)
+    margin: 30px 4% 0 0px
+  &__input
+    width: 100%
+    display: flex
+    margin: 36px 0 0 0
+    button
+      font-family: var(--font-os-condensed)
+      color: white
+      font-size: 22px
+      font-weight: 400
+      line-height: 32px
+      letter-spacing: -2%
+      text-align: center
+      background: var(--fontAccentColor)
+      height: 40px
+      margin-left: 5px
+      padding: 0px 7.9% 4px
+      text-wrap: nowrap
+    input
+      height: 40px
+      width: 100%
+      padding: 0 11px 3px
+
+      font-family: var(--font-os-condensed)
+      font-size: 22px
+      font-weight: 400
+      line-height: 32px
+      letter-spacing: -2%
+      text-align: left
+      color: var(--fontGrayColor)
+      border: 1px solid #CDCDCD
+      &:focus-visible
+        outline: none !important
+        border-color: var(--fontAccentColor)
+      &::placeholder
+        font-family: var(--font-os-condensed)
+        font-size: 22px
+        font-weight: 400
+        line-height: 32px
+        letter-spacing: -2%
+        text-align: left
+        color: #B8B8B8
+

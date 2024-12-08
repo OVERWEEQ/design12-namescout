@@ -1,0 +1,23 @@
+.intro
+    position: relative
+    margin: 16px 0 0 0
+    &__figure
+        margin: 0
+    &__grad
+        position: absolute
+        bottom: 0
+    &__title
+        position: absolute
+        bottom: 9%
+        font-family: var(--font-os-condensed)
+        color: white
+        font-size: 64px
+        font-weight: 800
+        letter-spacing: -2%
+        text-align: center
+        width: 100%
+    &__img
+        @include media('sm')
+            width: 100svw
+            left: -0.5rem
+            position: relative

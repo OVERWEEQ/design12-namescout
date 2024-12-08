@@ -1,0 +1,51 @@
+.swapper
+    margin-top: 17px
+    overflow: hidden
+    &__container
+        width: 100%
+        position: relative
+        display: flex
+        overflow-x: auto
+        overflow-y: hidden
+        scroll-behavior: smooth
+        scroll-snap-type: x mandatory
+        scrollbar-width: none
+    &__item
+        flex-shrink: 0
+    &__figure
+        margin: 0
+    &__name
+        position: absolute
+        bottom: 0
+        font-family: var(--font-os-condensed)
+        font-size: 64px
+        font-weight: 800
+        line-height: normal
+        letter-spacing: -2%
+        text-align: center
+        color: white
+        margin-bottom: 0.9%
+        width: 100%
+        z-index: 1
+    &__grad
+        width: 100%
+        position: absolute
+        bottom: 0
+        height: 104%
+    &__scroller
+        height: 40px
+        display: flex
+        justify-content: space-between
+        background: var(--bgAccentColor)
+    &__button-left, &__button-right
+        width: 46px
+        height: 40px
+    &__place
+        span
+            font-family: var(--font-os-condensed)
+            font-size: 22px
+            font-weight: 600
+            line-height: 36px
+            letter-spacing: -2%
+            text-align: center
+            color: var(--fontAccentColor)

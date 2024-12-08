@@ -1,0 +1,82 @@
+@import 'media'
+@import 'vendors/_font-face'
+@import 'variables'
+@import 'fonts/open_sans'
+@import 'fonts/open_sans_condensed'
+@import 'fonts/oswald'
+@import 'fonts/gotham'
+
+@import 'components/header'
+@import 'components/nav'
+@import 'components/cards'
+@import 'components/headline'
+@import 'components/breadcrumbs'
+@import 'components/category'
+@import 'components/multi_section'
+@import 'components/swapper'
+@import 'components/intro'
+@import 'components/teaser'
+@import 'components/countries'
+@import 'components/article'
+@import 'components/title'
+@import 'components/follows'
+@import 'components/starting'
+
+.--d-flex
+  display: flex
+.--d-block
+  display: block
+.--align-items-center
+  align-items: center
+.--align-items-end
+  align-items: end
+.--text-align-center
+  text-align: center
+.--border-top
+  border-top: 1px solid #989898
+.--border-bottom
+  border-bottom: 1px solid #989898
+.--justify-content-space-between
+  justify-content: space-between
+.--justify-content-center
+  justify-content: center
+.--justify-content-end
+  justify-content: end
+.--flex-direction-column
+  flex-direction: column
+.--fw-wrap
+  flex-wrap: wrap
+.--fw-nowrap
+  flex-wrap: nowrap
+
+.main-structure
+  a
+    text-decoration: none
+  li
+    list-style: none
+  #wrapper_content
+    max-width: 1024px
+    margin: auto
+    @include media('lg')
+      width: 100svw
+      max-width: 100svw 
+    main
+      padding: 0 1rem 2rem 1rem
+      background-color: white
+      overflow: hidden
+      @include media('lg')
+        padding: 0 0.5rem 2rem 0.5rem
+      .wrapper
+        margin: 74px 0 0 0
+      
+#artikel 
+  main 
+    padding-top: 33px !important
+    .category__title
+      margin: 21px 9% 0 9%
+    .multi_section__add
+      .card-wrapper
+        padding-top: 42px
+        width: 100% !important
+        .card-small
+          width: 100%

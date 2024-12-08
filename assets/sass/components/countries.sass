@@ -1,0 +1,41 @@
+.countries
+  &__container
+    gap: 1rem
+    display: flex
+    flex-wrap: wrap
+    margin: 12px 0 0 0
+    height: 2000px
+    transition: max-height 600ms ease-in-out
+    justify-content: flex-start
+    width: 660px
+    @include media('lg')
+      width: unset
+  &__item,  &__button
+    opacity: 1
+    width: calc(20% - 13px)
+    display: flex
+    flex-direction: column
+    justify-content: center
+    border: #D7D7D7 1px solid
+    height: 90px
+    transition: background 200ms ease-in-out, opacity 600ms ease-in-out
+  &__four
+    width: calc(25% - 12px)
+  &__three
+    width: calc(100% / 3 - 12px)
+  &__item:hover, &__button:hover
+    background: var(--bgAccentColor)
+  &__figure
+    margin: 0
+  &__name, &__more
+    font-family: var(--font-os-condensed)
+    font-size: 22px
+    font-weight: 400
+    line-height: 24px
+    letter-spacing: -0.04em
+    text-align: center
+    color: var(--fontGrayColor)
+    position: relative
+    bottom: -7px
+  &__more
+    bottom: 0

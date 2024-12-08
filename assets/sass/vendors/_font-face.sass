@@ -1,0 +1,11 @@
+@mixin font($f-name, $f-url, $f-weight: normal, $f-style: 'normal', $f-format: 'opentype')
+  @if $f-style == null
+    $f-style: 'normal'
+  @if $f-format == null
+    $f-format: 'opentype'
+  @font-face
+    font-family: $f-name
+    font-style: $f-style
+    font-weight: $f-weight
+    font-display: swap
+    src: local($f-name), url($f-url) format($f-format)
